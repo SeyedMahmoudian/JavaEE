@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.amzi.servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>com.amzi.servlets.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/AdminServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>reserve</servlet-name>
+		<servlet-class>com.amzi.servlets.ReservationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>reserve</servlet-name>
+		<url-pattern>/ReservationServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>unreserve</servlet-name>
+		<servlet-class>com.amzi.servlets.UnReserveServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>unreserve</servlet-name>
+		<url-pattern>/UnReserveServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>com.amzi.servlets.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>flights</servlet-name>
+		<servlet-class>com.amzi.servlets.FlightBookingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>flights</servlet-name>
+		<url-pattern>/FlightBookingServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>customer</servlet-name>
+		<servlet-class>com.amzi.servlets.CustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customer</servlet-name>
+		<url-pattern>/CustomerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>subscribe</servlet-name>
+		<servlet-class>com.amzi.servlets.SubscribeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subscribe</servlet-name>
+		<url-pattern>/SubscribeServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
